@@ -1,0 +1,134 @@
+/* CSS styles */
+ 
+html,body {
+     background: url(./img/star.jpg) top left repeat;
+     background-size: cover;
+     width: 100%;
+     height: 100%;
+}
+
+.first-cont{
+    border-radius: 3%;
+    height: 98%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0 10px 30px #000;
+    backdrop-filter: blur(8px);
+}
+
+.f-colum{
+    margin: 50px;
+    background:url(./img//colum.jpg);
+    border-radius: 1%;
+    height: 96%;
+}
+
+.f-colum  h1{
+    font-size: 35px;
+    color:whitesmoke;
+}
+
+.f-colum ul{
+    list-style: none;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.izq-cont{
+    display: flex;
+    align-items: center;
+    height: 250px;
+    margin-top: 20%;
+    color: whitesmoke;
+}
+
+.der-cont{
+    display: block;
+    height: 250px;
+    margin-top: 20%;
+    color: whitesmoke;
+}
+
+.izq{
+    width: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.der{
+    width: 80%;
+    height: 80%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.carta{
+    position: relative;
+    width: 450px;
+    height: 600px;
+    margin: 15px;
+}
+
+.carta .face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 3%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.carta .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.carta .front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .front h1{
+    color:cadetblue;
+	font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.carta .back{
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    background-image: url(img/back.jpg);
+    background-position: center;
+    
+}
+
+.carta .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .back p{
+    font-size:25px;
+    text-justify: auto;
+    font-family: papyrus;
+    color:white;
+}
